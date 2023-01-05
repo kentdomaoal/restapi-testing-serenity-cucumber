@@ -1,5 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Pet Records Management","Searching for an available pet","SUCCESS","2023-01-05T11:36:37.056655502Z[Etc/UTC]","0.0","7.67"
-"Pet Records Management","Updating record of a pet via PUT method","SUCCESS","2023-01-05T11:36:44.752313994Z[Etc/UTC]","0.0","3.46"
-"Pet Records Management","Updating record of a pet via POST method","SUCCESS","2023-01-05T11:36:48.220748061Z[Etc/UTC]","0.0","3.04"
-"Pet Records Management","Deleting record of a pet","SUCCESS","2023-01-05T11:36:51.264811964Z[Etc/UTC]","0.0","2.88"
+"Pet Records Management","Updating record of a pet via PUT method","SUCCESS","2023-01-05T11:45:48.765232597Z[Etc/UTC]","0.0","5.87"
+"Pet Records Management","Updating record of a pet via POST method","SUCCESS","2023-01-05T11:45:54.64913398Z[Etc/UTC]","0.0","5.22"
+"Pet Records Management","Deleting record of a pet","SUCCESS","2023-01-05T11:45:59.878199493Z[Etc/UTC]","0.0","5.17"
