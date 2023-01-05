@@ -1,0 +1,54 @@
+# Run tests manually in the Actions tab of the project
+name: PetStore API Testing - Manual Trigger
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      RECIPIENT_EMAIL:
+        description: 'Enter report recipient email address'
+        # Default value if no value is explicitly provided
+        default: 'kentdomaoal@gmail.com'
+        # Input has to be provided for the workflow to run
+        required: true
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 17
+        uses: actions/setup-java@v1
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Cache the Maven packages to speed up build
+        uses: actions/cache@v1
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+
+      - name: Build with Maven
+        run: mvn -B verify --file pom.xml
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: target/site/serenity # The folder the action should deploy.
+
+      - name: Send Report URL
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: Serenity Report - ${{ github.repository }} Build(${{ github.run_number }})
+          to: ${{ inputs.RECIPIENT_EMAIL }}
+          from: Github WorkFlow
+          html_body: file://email.md
+          convert_markdown: true

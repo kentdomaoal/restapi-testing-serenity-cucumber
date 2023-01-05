@@ -1,0 +1,59 @@
+[
+  {
+    "id": 8,
+    "category": {
+      "id": 3,
+      "name": "turtle"
+    },
+    "name": "Leonardo",
+    "photoUrls": [
+      "sampleUrl1",
+      "sampleUrl2"
+    ],
+    "tags": [
+      {
+        "id": 1,
+        "name": "TMNT"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 3,
+      "name": "turtle"
+    },
+    "name": "Raphael",
+    "photoUrls": [
+      "sampleUrl1",
+      "sampleUrl2"
+    ],
+    "tags": [
+      {
+        "id": 1,
+        "name": "TMNT"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 3,
+      "name": "turtle"
+    },
+    "name": "Donatello",
+    "photoUrls": [
+      "sampleUrl1",
+      "sampleUrl2"
+    ],
+    "tags": [
+      {
+        "id": 1,
+        "name": "TMNT"
+      }
+    ],
+    "status": "available"
+  }
+]

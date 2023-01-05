@@ -1,0 +1,4 @@
+petID,petName,status,categoryID,categoryName,tags,photoUrls
+5,Goldie-1,available,4,fish,1 goldfish,sample url
+6,Goldie-2,available,4,fish,1 goldfish,sampleUrl1 sampleUrl2
+7,Goldie-3,available,4,fish,1 goldfish,sampleUrl
