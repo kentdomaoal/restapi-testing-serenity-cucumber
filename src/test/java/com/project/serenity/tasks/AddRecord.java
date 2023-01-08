@@ -2,6 +2,7 @@ package com.project.serenity.tasks;
 
 import com.project.serenity.models.Category;
 import com.project.serenity.models.Pet;
+import com.project.serenity.models.PetStatus;
 import com.project.serenity.models.Tag;
 import com.project.serenity.util.TestDataReader;
 import io.restassured.http.ContentType;
@@ -28,7 +29,7 @@ public class AddRecord {
     }
 
     public static Performable ofPet(String petCategory){
-        Pet pet = Pet.builder().id(1).name("Blackie").status("available")
+        Pet pet = Pet.builder().id(1).name("Blackie").status(PetStatus.available.name())
                 .category(new Category(1,petCategory)).build();
 
         return Task.where("Add record of pet "+petCategory,
