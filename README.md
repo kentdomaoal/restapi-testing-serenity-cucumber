@@ -9,9 +9,9 @@ Data-driven using Excel, CSV, JSON file.
 ## How to run in local machine
 
 ## 💻 *Pre-requisites*
-- [Git](https://git-scm.com/downloads)
-- [Java 8](https://www.oracle.com/ph/java/technologies/downloads) or higher
-- [Maven](https://maven.apache.org/download.cgi)
+- [![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=FFFFFF)](https://git-scm.com/downloads)
+- [![Java 8](https://img.shields.io/badge/-Java%208-red?style=flat&logo=java&logoColor=FFFFFF)](https://www.oracle.com/ph/java/technologies/downloads) or higher
+- [![Maven](https://img.shields.io/badge/-Maven-C71A36?style=flat&logo=apache-maven&logoColor=FFFFFF)](https://maven.apache.org/download.cgi)
 
 ### 1. Clone the project
 ```
